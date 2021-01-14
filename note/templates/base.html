@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Manage</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" media="all">
+</head>
+<body>
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo_container">
+                <h1>Expense<span>Manage</span></h1>
+            </div>
+            <ul class="navigation">
+                <a href="{% url 'home' %}"><li>Home</li></a>
+                <a><li>Contact</li></a>
+                <a><li>Logout</li></a>
+            </ul>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
